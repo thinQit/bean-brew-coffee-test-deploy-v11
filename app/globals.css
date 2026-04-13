@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #722f37;
+  --primary-foreground: #fefae0;
+
+  --secondary: #606c38;
+  --secondary-foreground: #fefae0;
+
+  --accent: #ffb300;
+  --accent-foreground: #3e2723;
+
+  --background: #fefae0;
+  --foreground: #3e2723;
+
+  --muted: #f5eed1;
+  --muted-foreground: #5a4743;
+
+  --border: #e6d9b2;
+  --ring: #722f37;
+
+  --destructive: #b3261e;
+
+  --card: #fbf3d7;
+  --card-foreground: #3e2723;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: rgba(255, 179, 0, 0.35);
+}
+
+/* Premium feel: subtle grain + soft gradients without hard lines */
+.bg-cream-gradient {
+  background: radial-gradient(
+      1200px 600px at 20% 0%,
+      rgba(114, 47, 55, 0.08),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 80% 20%,
+      rgba(96, 108, 56, 0.08),
+      transparent 55%
+    ),
+    linear-gradient(180deg, rgba(251, 243, 215, 0.9), rgba(254, 250, 224, 1));
+}
+
+.section-surface {
+  background: rgba(251, 243, 215, 0.9);
+}
+
+.section-surface-muted {
+  background: rgba(245, 238, 209, 0.9);
+}
